@@ -1,11 +1,16 @@
-import './App.css'
+import Nav from "./components/nav";
+import Rooms from "./templates/rooms";
+import Controls from "./templates/controls";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>kage</h1>
+      <Nav />
+      <Rooms />
+      <Controls />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
