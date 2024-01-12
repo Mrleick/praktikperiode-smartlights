@@ -1,14 +1,10 @@
-import Nav from "./components/nav";
-import Rooms from "./templates/rooms";
-import Controls from "./templates/controls";
+import Roompage from "./pages/roomPage";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Rooms />
-      <Controls />
+      <Roompage />
     </>
   );
 }
