@@ -12,7 +12,7 @@ const Scenes = () => {
   return (
     <>
       <Header title="Scenes" color="text-background-header" />
-      <div className="flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-between mb-[63px]">
         {buttons.map((button, index) => (
           <div
             key={index}

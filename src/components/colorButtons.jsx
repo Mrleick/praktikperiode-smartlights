@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 
-const ColorButtons = () => {
+const ColorButtons = ({ onColorChange }) => {
   const buttonColors = [
     "#FF9B9B",
     "#94EB9E",
@@ -20,6 +20,7 @@ const ColorButtons = () => {
             key={index}
             className="w-6 h-6 rounded-full bg-opacity-75 cursor-pointer"
             style={{ backgroundColor: color }}
+            onClick={() => onColorChange(color)}
           />
         ))}
       </div>

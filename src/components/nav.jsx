@@ -1,7 +1,7 @@
 const nav = () => {
   return (
     <>
-      <div className="flex w-[326px] justify-between mx-auto items-center mt-[61px]">
+      <div className="flex w-[326px] justify-between mx-auto items-center mt-[61px] mb-[20px]">
         <h1 className="text-white text-3xl font-bold max-w-[106px]">
           Control Panel
         </h1>
