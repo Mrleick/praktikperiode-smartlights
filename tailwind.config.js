@@ -11,7 +11,9 @@ export default {
     cardcolor: '#D8D7DA',
     cardheader: '#002D67',
     cardp: '#FFA939',
-    cardcontainer: '#F6F8FB'
+    cardcontainer: '#F6F8FB',
+    slider: '#FFD339',
+    bulbone: '#CECECE',
     }
   },
     
