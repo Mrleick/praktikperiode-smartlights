@@ -1,12 +1,14 @@
 import Slider from "../components/slider";
+import ColorButtons from "../components/colorButtons";
+import Scenes from "../templates/Scenes";
 
 const ColorSettings = () => {
   return (
     <>
-      <div className="bg-cardcontainer flex flex-col rounded-t-[30px] p-[25px] gap-[24px] mt-[20px]">
-        <h2 className="text-cardheader font-bold text-[19px]">Intensity</h2>
+      <div className="bg-background-default flex flex-col rounded-t-[30px] p-[25px] gap-[24px] mt-[20px]">
         <Slider />
-        <h2 className="text-cardheader font-bold text-[19px]">Colors</h2>
+        <ColorButtons />
+        <Scenes />
       </div>
     </>
   );

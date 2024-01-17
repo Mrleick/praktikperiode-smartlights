@@ -14,9 +14,9 @@ const RoomNav = () => {
         </p>
       </div>
 
-      <div>
+      <div className="mr-[32px]">
         <img className="z-10 relative" src={Lamp} alt="" />
-        <div className="w-[25px] h-[25px] rounded-full absolute bg-[#e5e7eb] right-[56px] top-[142px]"></div>
+        <div className="w-[25px] h-[25px] rounded-full absolute bg-[#FFD139] blur-sm right-[90px] top-[142px]"></div>
       </div>
     </div>
   );

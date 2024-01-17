@@ -1,26 +1,31 @@
+import React from "react";
 import Cards from "../components/cards";
-import Bed from "../assets/bed.png";
-import Room from "../assets/room.png";
-import Kitchen from "../assets/kitchen.png";
-import Bathroom from "../assets/bathtube.png";
-import Outdoor from "../assets/house.png";
-import Balcony from "../assets/balcony.png";
+import Header from "../components/Header";
 
 const Rooms = () => {
+  const buttonsData = [
+    { name: "Bed Room", imageSrc: "src/assets/bed.png", lightsCount: 4 },
+    { name: "Living Room", imageSrc: "src/assets/room.png", lightsCount: 2 },
+    { name: "Kitchen", imageSrc: "src/assets/kitchen.png", lightsCount: 5 },
+    { name: "Bathroom", imageSrc: "src/assets/bathtube.png", lightsCount: 1 },
+    { name: "Outdoor", imageSrc: "src/assets/house.png", lightsCount: 5 },
+    { name: "Balcony", imageSrc: "src/assets/balcony.png", lightsCount: 2 },
+  ];
+
   return (
-    <>
-      <div className="bg-cardcontainer flex flex-wrap rounded-t-[30px] p-[25px] justify-center gap-[24px] mt-[20px]">
-        <h2 className="text-[19px] font-bold w-full text-cardheader">
-          All Rooms
-        </h2>
-        <Cards imgSrc={Bed} />
-        <Cards imgSrc={Room} />
-        <Cards imgSrc={Kitchen} />
-        <Cards imgSrc={Bathroom} />
-        <Cards imgSrc={Outdoor} />
-        <Cards imgSrc={Balcony} />
+    <div className="bg-background-default rounded-t-[30px] p-[25px]">
+      <Header title="All Rooms" />
+      <div className="flex flex-wrap justify-center gap-[24px] mt-[20px]">
+        {buttonsData.map(({ name, imageSrc, lightsCount }, index) => (
+          <Cards
+            key={index}
+            image={imageSrc}
+            title={name}
+            lightsCount={lightsCount}
+          />
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

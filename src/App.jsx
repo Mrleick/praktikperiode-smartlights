@@ -1,11 +1,12 @@
-import Roompage from "./pages/roomPage";
-import "./App.css";
+import React from "react";
+import "./index.css";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Roompage />
-    </>
+    <div className="footer">
+      <Outlet />
+    </div>
   );
 }
 
