@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { FaRegLightbulb, FaLightbulb } from "react-icons/fa";
+import { FaRegLightbulb } from "react-icons/fa";
 import Header from "../components/Header";
 
-const Slider = () => {
-  const [sliderValue, setSliderValue] = useState(0);
-
+const Slider = ({ onChange, value }) => {
   const handleChange = (e) => {
-    setSliderValue(e.target.value);
+    onChange && onChange(e.target.value);
   };
 
   return (
@@ -18,7 +16,7 @@ const Slider = () => {
           type="range"
           min="0"
           max="254"
-          value={sliderValue}
+          value={value}
           onChange={handleChange}
           className="w-64 h-px bg-border mb-2 mt-2 mx-4"
         />

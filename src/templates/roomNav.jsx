@@ -1,5 +1,6 @@
 import { FaArrowLeft } from "react-icons/fa6";
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 import Lamp from "../assets/lampe.svg";
 
@@ -14,7 +15,9 @@ const RoomNav = ({ selectedColor }) => {
     <div className="flex justify-between">
       <div className="ml-[25px]">
         <h1 className="text-[30px] font-bold text-white w-[86px] mt-[50px]">
-          <FaArrowLeft className="inline text-[15px] mr-[5px]" />
+          <Link to="/">
+            <FaArrowLeft className="inline text-[15px] mr-[5px]" />
+          </Link>
           Bed Room
         </h1>
         <motion.p
